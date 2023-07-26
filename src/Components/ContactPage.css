@@ -1,0 +1,73 @@
+
+/* ContactPage.css */
+
+.container {
+    max-width: 40px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+  }
+  
+  h3 {
+    text-align: center;
+    color: #190505;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 293px;
+    background-color: #e6dcdc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  input:focus,
+  textarea:focus {
+    padding: 8px;
+    border-color: #007bff;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: fit-content;
+    font-weight: bold;
+    transition: background-color 0.1s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  button:active{
+    background-color: #e6dcdc;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 8px;
+  }
