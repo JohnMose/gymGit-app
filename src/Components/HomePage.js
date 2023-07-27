@@ -1,33 +1,31 @@
 import React from 'react';
-//import logo192 from './logo192.png';
-import './HomePage.css'
+// import { Link } from 'react-router-dom';
+import './HomePage.css';
+import { useNavigate } from 'react-router-dom';
+
+const HomePage=()=>{
+  const navigate=useNavigate();
+
+  const handleSignClick=()=>{
+      navigate('/signup');
+  };
+  const handleLoginClick=()=>{
+    navigate('/login');
+  };
+     
 
 
-const HomePage = () => {
-  
   return (
     <div>
       <div className='containerHomePage'>
-
-      <h1>GET FIT, HAVE FUN</h1>
-      <p>
-      Food delivers meals, drinks and groceries from hundreds of restaurants and shops across countries directly to you.
-      </p>
-      <p1>Now you can get your favourite meal delivered right to your door! We've chosen the top delivery services in Kenya.</p1>
-     
-      <p2>Everything you need,</p2>
-      <p3>delivered now</p3>
-       
-      
-
-      {/* <button onClick={() => window.open('https://google.com')}>Open</button> */}
-
-     {/* // <img src={logo192} alt="Open Button" /> */}
-    
+        <h1>GET FIT, HAVE FUN</h1>
+        
+          
+          { <button onClick={handleLoginClick}>Login</button> }
+          <button onClick={handleSignClick}>Sign Up</button>
+          </div>
     </div>
-    </div>
-
   );
-}
+};
 
 export default HomePage;
