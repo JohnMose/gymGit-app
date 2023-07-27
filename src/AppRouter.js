@@ -16,7 +16,7 @@ const AppRouter = () => {
             <Link to="/" className="nav-link">Home</Link>
           </li>
           <li>
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>//change to Signup
           </li>
           <li>
             <Link to="/about" className="nav-link">About</Link>
